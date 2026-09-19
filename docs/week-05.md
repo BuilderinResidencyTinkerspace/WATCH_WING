@@ -1,30 +1,46 @@
 # Week 5
 
-**Goal this week:** Actually get a cuttable body material sorted and start making real progress on the airframe, without losing more time.
+**Goal this week:** Get a suitable body material sorted out and make progress on the airframe while starting the electronics work in parallel.
 
 ## What we did
-- Found a source for Thermocol close by — a medical store, of all places — and picked up a sheet to work with.
-- The sheet turned out to be way thicker than what we actually needed for the wing, so the plan was to slice it down ourselves using the hot-wire cutter, guided by a balsa wood template clamped on either side to keep the cut level and consistent.
-- Tried this out, and the balsa template ended up scorching/burning where the hot wire ran along it for too long — not something we'd expected going in.
-- On top of that, the wire itself was still a little jagged (a leftover issue from the cutter build), so even where it did cut, the Thermocol came out with an uneven, rough finish instead of a clean flat surface.
-- The gear cable wire we'd been using as a nichrome substitute also snapped partway through, with no replacement wire on hand.
-- Between the burnt template, the uneven cuts, and the broken wire, it became clear we were fighting the material and the tool at the same time, and that patching this together further wasn't going to get us a usable wing.
-- Made the call to source genuine Depron sheet instead, even knowing it would take about a week to arrive.
-- Rather than sit idle for that week, decided to start electronics work in parallel from this point on, instead of waiting on the airframe to be "done" first.
-- Also, on Shan chettan's advice, decided to switch the camera module from ESP32-CAM to a Raspberry Pi Camera — the image quality difference (resolution, low-light performance, autofocus) matters directly for the round-to-round comparison work later, and it was a low-cost switch to make now rather than after more had been built around ESP32-CAM.
+
+This week, we finally found a source for **Thermocol** nearby. Interestingly, we found it at a medical store and were able to get medicine boxes made of thermocol to continue working on the airframe. However, when we brought it back and checked the dimensions, we realized that the sheet was much thicker than what we actually needed for the wings.
+
+We decided to try reducing the thickness ourselves using the **hot-wire cutter** we had built earlier. To keep the cut level and consistent, we planned to use a **balsa wood template** clamped on either side of the Thermocol and guide the hot wire along the templates. This seemed like a simple solution, but when we actually tried it, we ran into another unexpected problem. The hot wire remained in contact with the balsa template for too long in some places, causing the wood to **scorch and burn**.
+
+The cutting itself also did not turn out as expected. The wire we were using still had some **jagged sections** left over from the earlier problems with the cutter, and this caused the Thermocol to come out with an uneven and rough surface instead of the clean, flat surface we needed for the wing.
+
+Things became even more difficult when the **gear cable wire** we had been using as a substitute for nichrome wire finally snapped during the process. Since we did not have a replacement wire available, we could not continue experimenting with the cutter. At this point, with the balsa template getting damaged, the Thermocol cuts coming out uneven, and the cutting wire broken, it became clear that we were spending too much time trying to make the material and cutting setup work.
+
+After considering the options, we decided that continuing with Thermocol was no longer practical. We therefore decided to **order genuine Depron sheet** instead. Although it would take approximately a week to arrive, using the correct material would save us from repeatedly trying to modify an unsuitable material and would give us a much better starting point for the final airframe.
+
+Rather than letting the week of waiting become completely unproductive, we decided to start working on the **electronics in parallel**. This would allow us to continue making progress on the project while waiting for the Depron.
+
+We also made an important change to the camera system this week. Based on **Shan chettan's advice**, we decided to replace the **ESP32-CAM with a Raspberry Pi Camera**. Since the Watchwing project depends heavily on comparing images from different flights, image quality is particularly important. The Raspberry Pi Camera provides advantages in areas such as **resolution, low-light performance, and autofocus**, making it a more suitable option for the image-comparison part of the project. We decided that making this change now would be much easier than building more of the system around the ESP32-CAM and changing it later.
 
 ## Problems and blockers
-- Thermocol from the medical store was too thick, and our attempt to resize it ourselves (hot-wire + balsa template) failed on multiple fronts — burnt template, jagged/uneven cuts, and a broken cutting wire, with no spare wire available.
-- Waiting a week for Depron to arrive is real lost time on the airframe specifically, even though electronics work can fill that gap.
+
+The main problem this week was that the Thermocol we sourced was **too thick**, and our attempt to reduce its thickness using the hot-wire cutter did not work as planned. The balsa templates began to burn when the hot wire remained against them for too long, while the uneven sections of the cutting wire resulted in rough and inconsistent cuts.
+
+The situation became more difficult when the **gear cable wire snapped** during the process. Since we did not have a spare wire available, we were unable to continue testing the cutter.
+
+After several attempts, it became clear that trying to fix the existing setup further would take more time without guaranteeing a usable wing. We therefore decided to move to genuine Depron instead.
+
+The Depron would take around **one week to arrive**, which meant that airframe construction would have to pause temporarily. However, we decided to use this waiting period to begin the electronics work rather than leaving the project idle.
 
 ## Decisions
-- Abandon Thermocol for the body, order genuine Depron sheet instead, and accept the ~1 week wait.
-- Use the waiting period to start electronics bring-up in parallel, rather than treating it as dead time.
-- Switch camera module from ESP32-CAM to Raspberry Pi Camera, per Shan chettan's advice.
+
+After the failed Thermocol cutting attempts, we decided to **abandon Thermocol as the body material** and order genuine **Depron sheet** instead. Although this meant waiting approximately a week for the material to arrive, we felt that using the correct material would be more reliable than continuing to modify the Thermocol ourselves.
+
+We also decided to begin **electronics bring-up in parallel** while waiting for the Depron. This would allow us to work on the electrical and control systems independently of the physical airframe.
+
+Another important decision was to switch the camera system from the **ESP32-CAM to a Raspberry Pi Camera**, following Shan chettan's advice. Since image quality will directly affect the round-to-round change-detection process, we decided that the better image quality and camera capabilities were worth making the change at this stage.
 
 ## Next week
-- Begin Raspberry Pi bring-up — OS flashing, headless SSH setup, picamera2 install and test capture.
-- Begin bench-testing the RC transmitter/receiver/ESC/motor/servo chain, independent of the flight controller.
+
+Next week, we will begin the **Raspberry Pi bring-up**, starting with flashing the operating system, setting up headless SSH access, installing `picamera2`, and testing image capture.
+
+At the same time, we will begin **bench-testing the RC transmitter, receiver, ESC, motor, and servos as a standalone system**, without connecting them to the flight controller initially. This will allow us to verify each part of the control and propulsion system before integrating everything into the UAV.
 
 ## Links
 - Code:
