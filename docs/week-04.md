@@ -1,30 +1,46 @@
 # Week 4
 
-**Goal this week:** Get a working body material and cutting method locked in, so airframe construction can actually proceed.
+**Goal this week:** Get a suitable body material and a reliable cutting method ready so that construction of the UAV airframe could finally proceed.
 
 ## What we did
-- Tested Sunboard (PVC foam) as a body material — rejected, too thick and dense for the airframe weight budget.
-- Tested Styrofoam (EPS) — rejected, not firm enough; crumbles and lacks rigidity when cut with a blade.
-- Adopted Thermocol (low-density EPS) as the body material — rigid and light, but requires hot-wire cutting rather than a blade.
-- Finalized and exported the CAD/STL file for the Clark-Y airfoil hot-wire cutting template.
-- Built a DIY hot-wire foam cutter from scratch — substituted gear cable wire since nichrome wire isn't locally available.
-- Bench-tested the cutter on a variable DC power supply (16V, 3.5A) to confirm it heats correctly before touching any foam.
+
+This week, we focused mainly on finding a suitable material for the UAV body and figuring out a practical way to cut the airfoil and body components. We first tested **Sunboard (PVC foam)**, which we had previously used, but rejected it because it was too thick and dense for our aircraft and would add too much weight to the final airframe.
+
+We then tried **Styrofoam (EPS)** as another possible material. Although it was lightweight, we found that it was not firm enough for our requirements. When we tried cutting it with a blade, the material crumbled easily and did not maintain enough rigidity, making it unsuitable for building the airframe.
+
+After testing the different materials, we decided to use **Thermocol (low-density EPS)** instead. It was considerably lighter while still providing enough rigidity for the structure. However, we quickly realized that cutting it accurately with a normal blade would be difficult, so we decided to use a **hot-wire cutter** instead.
+
+We finalized the CAD design for the **Clark-Y airfoil** and exported the required STL file to create the cutting template. Since a proper nichrome wire was not available locally, we decided to experiment with **gear cable wire** as a substitute. We then built our own DIY hot-wire foam cutter from scratch using the available materials.
+
+Before trying to cut the actual foam, we connected the cutter to a variable DC power supply and tested it at around **16 V and 3.5 A**. The wire heated up properly, confirming that the basic setup was working. However, the wire initially had problems with sagging and kinking. We solved these issues by re-tensioning the wire and manually straightening it instead of replacing it.
+
+By the end of the week, the material and cutting setup were finally ready. We had not yet started cutting the actual Thermocol body panels, but the hot-wire cutter had been successfully bench-tested and was ready for the next stage of construction.
 
 ## Problems and blockers
-- Depron, our originally intended body material, is unavailable locally due to the ongoing war affecting supply.
-- No nichrome wire available locally — currently substituting gear cable wire, untested for long-term durability.
-- Cutter wire initially sagged and had innate kinking; fixed both through re-tensioning and hand-straightening rather than replacing the wire.
-- Have not yet started cutting the Thermocol body panels — cutter is ready, but real cutting hasn't begun.
+
+One of the biggest problems we faced was the unavailability of **Depron**, which was our originally intended body material. Due to the ongoing war affecting its supply, we were unable to source it locally and had to look for alternative materials.
+
+We also could not find proper **nichrome wire** locally for the hot-wire cutter. Because of this, we decided to experiment with gear cable wire as a substitute. Although it worked during the initial test, we still need to determine whether it will be durable enough for repeated cutting.
+
+Another issue we faced was that the cutter wire initially **sagged and had some natural kinks**, which could have affected the accuracy of the airfoil cuts. We managed to correct this by re-tensioning the wire and manually straightening it.
+
+The actual Thermocol cutting had also not started yet, so the performance of the cutter on the real material was still something we needed to verify.
 
 ## Decisions
-- Body material: Thermocol (EPS) fixed
-- Wing airfoil: Clark-Y profile, CAD/STL template finalized for hot-wire cutting.
-- Continue with gear cable wire as a nichrome substitute unless a proper source is found.
+
+After testing the available materials, we decided to use **Thermocol (EPS)** as the main body material for the UAV.
+
+We also finalized the **Clark-Y airfoil** for the wing and completed the CAD/STL template that would be used with the hot-wire cutter.
+
+Since proper nichrome wire was not available, we decided to continue using **gear cable wire as a temporary substitute**, unless we were able to find a reliable source of nichrome wire.
+
+With the material, airfoil design, and cutting method decided, we were finally ready to start constructing the actual airframe.
 
 ## Next week
-- Body (wings, fuselage, tail) targeted for completion today or tomorrow.
-- Weigh finished panels and check against target AUW/wing loading once cut.
-- start with electronics
+
+Next week, we will complete the **body of the UAV**, including the wings, fuselage, and tail, using the Thermocol and the hot-wire cutting setup. Once the panels are completed, we will weigh the finished airframe and check the actual weight against our target **AUW and wing loading**.
+
+After completing the main body, we will also start working on the **electronics**, including the flight controller, servos, motor, ESC, GPS, and other components required for the UAV.
 
 ## Links
 - Code:
