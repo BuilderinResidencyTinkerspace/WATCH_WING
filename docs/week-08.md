@@ -13,6 +13,8 @@ https://github.com/user-attachments/assets/d9e56841-344a-40bb-9b3b-cab85152925d
 
 
 In the Servo Output screen, all the servos moved correctly in response to radio input, except for throttle on channel 3. We went through pretty much every component individually to try and find the cause. We checked the RCMAP parameters — RCMAP_ROLL, RCMAP_PITCH, RCMAP_THROTTLE, RCMAP_YAW — and they were all sitting at their correct default values. We checked the servo function assignment again and confirmed channel 3 really was set to Throttle. We checked the physical wiring, checked that the receiver's channel order matched what Pixhawk expected, and confirmed on the transmitter's own screen that the throttle stick's output value was genuinely changing when we moved it, so the signal was leaving the transmitter correctly. It also showed up correctly in the radio calibration screen. This told us the input signal was being sent correctly, it just wasn't translating to an actual output. We decided to set that issue aside for the moment and moved on to ESC calibration.
+
+
 https://github.com/user-attachments/assets/6a6e90e5-7b14-45b2-b108-5be83ae9cdb1
 
 
