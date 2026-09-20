@@ -1,18 +1,18 @@
-# WatchWing — Autonomous Fixed-Wing UAV 
+# WatchWing - Autonomous Fixed-Wing UAV 
 
 WatchWing is a scratch-built, autonomous fixed-wing UAV . This document
-walks through the entire build — airframe, electronics, wiring, and software
+walks through the entire build - airframe, electronics, wiring, and software
 configuration — so it can be replicated from scratch.
 
 This is a first-time build, and this README includes the mistakes we made
 and what we'd do differently, not just the "correct" path. Read the
-**Lessons Learned** section before you start — it will save you real time.
+**Lessons Learned** section before you start - it will save you real time.
 
 ---
 
 ## 1. Overview
 
-- **Airframe:** Flite Test "Simple Scout" (stock plan, no custom scaling)
+- **Airframe:** Flite Test "Simple Scout" (stock plan, no custom scaling) - https://www.flitetest.com/articles/ft-simple-scout-build
 - **Flight controller:** Pixhawk-class board (Pixhawk 2.4.8 / Pixhawk1) running ArduPilot's **ArduPlane** firmware
 - **Ground control:** Mission Planner (Windows)
 - **Radio:** FlySky FS-i6 transmitter + FS-iA10B receiver (PPM)
